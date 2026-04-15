@@ -42,6 +42,41 @@
        disabled
      />
    </p>
+  <hr />
+
+    <section id="blog">
+      <h2>Lab 3: Sound Design for Jet Engine</h2>
+
+
+    <article>
+      <h3>Jet Engine</h3>
+      <p>
+        I aimmed to create a jet engine sound that is realistic and immersive as well as added 
+        (or tried to add) a fly-by effect to the jet engine.
+        From my Farnell reading, the jet combines two models: a five-partial additive turbine layer and a
+        turbulent noise layer. At low throttle the inharmonic sine partials are
+        more audible, while high throttle increases broadband noise level, filter
+        bandwidth, and distortion to produce a loud roaring sound.
+        I created arbritary ratios and amplitudes for the turbine and noise layers. The speed 
+        was determined by the frequency and scaling by the ratios. The second part of the jet engine 
+        was the turbulent exhaust. I created a white noise buffer and used it to create a turbulent sound since
+        this noise is much more flat than brown noise. With low and high pass filters as well as a waveshaper,
+         I was able to create a realistic turbulent sound.
+         The experience was fun since I thought the noise would be cool to create. I did not find
+         the Farnell example still online so I had no comparison. However, I thought changing throttle 
+         speed and fly-by distance was a good way to test the range of the sound! I used additive synthesis 
+         to combine the 5 sine waves. This allowed for the creation of a realistic turbine sound that shifts
+         with the throttle speed. By playing with the white noise with filters, waveshaper, EQ, and gain I 
+         was able to create a solid exhaust sound but I do think that at high throttle the sound is too similar to
+         white noise. 
+      </p>
+    <figure>
+        <img src="CompSoundLab3SignalFlow.png" alt="Brook signal flow diagram" width="1000" />
+        <figcaption>Jet Engine Signal Flow.</figcaption>
+      </figure>
+    </article>
+  </section>
+  
    <script src="main.js"></script>
  </body>
 </html>
