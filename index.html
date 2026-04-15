@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Web Audio — brook &amp; jet</title>
+ </head>
+ <body>
+   <p>
+     <button type="button" id="start">Start brook</button>
+     <button type="button" id="stopBrook" disabled>Stop brook</button>
+   </p>
+   <hr />
+   <p>
+     <button type="button" id="startJet">Start jet engine</button>
+     <button type="button" id="stopJet" disabled>Stop jet engine</button>
+   </p>
+   <p>
+     <label for="jetSpeed">Throttle (idle → full)</label><br />
+     <input
+       type="range"
+       id="jetSpeed"
+       min="0"
+       max="1"
+       step="0.005"
+       value="0.12"
+       disabled
+     />
+   </p>
+   <p>
+     <button type="button" id="flybyBtn" disabled>Fly-by</button>
+   </p>
+   <p>
+     <label for="flybyDist">Closest approach distance (m)</label><br />
+     <input
+       type="range"
+       id="flybyDist"
+       min="50"
+       max="2000"
+       step="50"
+       value="300"
+       disabled
+     />
+   </p>
+   <script src="main.js"></script>
+ </body>
+</html>
